@@ -9,8 +9,13 @@ const songs = [
             { title: "Ain't No Mountain High Enough", artist: "Marvin Gaye & Tammi Terrell", genre: "R&B" },
             { title: "Come and Get Your Love", artist: "Redbone", genre: "Rock" },
             { title: "I'm Not in Love", artist: "10cc", genre: "Pop" },
-            { title: "Fooled Around and Fell in Love", artist: "Elvin Bishop", genre: "Rock" }
-        ];
+            { title: "Fooled Around and Fell in Love", artist: "Elvin Bishop", genre: "Rock" },
+            { title: "Falling", artist: "Alicia Keys", genre: "R&B"},
+            { title: "Fool in love", artist: "Rihanna", genre: "R&B"},
+            { title: "Conversation Pit", artist: "Junetober", genre: "R&B"},
+            { title: "Climax", artist: "Usher", genre: "R&B"},
+            { title: "School's open", artist: "Alice Cooper", genre: "Rock"},
+        ]; //Add 5 new songs
 
         const guardians = {
             "Star-Lord": "Rock",
@@ -32,14 +37,14 @@ const songs = [
 
         const playlists = generatePlaylist(songs, guardians);
         const card = document.getElementById("playlists");
-
+9
         Object.keys(playlists).map(guardian => {
             const playlist = playlists[guardian];
             const guardianElement = document.createElement("div");
             guardianElement.className = "playlist"
             guardianElement.innerHTML = `<h2>${guardian}'s Playlist:</h2>`;
             
-            // Create a new div for each Guardian's playlist with custom class for styling
+             // Create a new div for each Guardian's playlist with custom class for styling
             const listDiv = document.createElement("div");
             listDiv.classList.add("playlist-div");
 
